@@ -11,6 +11,7 @@ import {
   Users,
   Calendar,
   MapPin,
+  Smartphone,
   BarChart3
 } from 'lucide-react';
 
@@ -31,8 +32,10 @@ const navigationItems: NavigationItem[] = [
   { id: "overview", name: "Overview", icon: Home, href: "/" },
   { id: "campaign-view", name: "Campaign View", icon: Target, href: "/campaign-view" },
   { id: "demographic-view", name: "Demographic View", icon: Users, href: "/demographic-view" },
+  { id: "device-view", name: "Device View", icon: Smartphone, href:"/device-view"},
   { id: "weekly-view", name: "Weekly View", icon: Calendar, href: "/weekly-view" },
-  { id: "region-view", name: "Region View", icon: MapPin, href: "/region-view" },
+  { id: "region-view", name: "Region View", icon: MapPin, href: "/region-view" }
+  
 ];
 
 export function Navbar({ className = "" }: NavbarProps) {
